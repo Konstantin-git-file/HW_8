@@ -77,6 +77,10 @@ public class Student {
         return true; // Все оценки равны 5
     }
 
+    public boolean isValidGrade(int grade) {
+        return gradeValidator.test(grade);
+    }
+
     @Override
     public String toString() {
         return name + ": " + Arrays.toString(grades);
